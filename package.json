@@ -1,0 +1,31 @@
+{
+  "name": "master_react",
+  "version": "1.0.0",
+  "description": "This is my own package.json file configuartion",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vennela-Vasireddy/Master_React.git"
+  },
+  "keywords": [
+    "React",
+    "ReactDom"
+  ],
+  "author": "Vennela Vasireddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vennela-Vasireddy/Master_React/issues"
+  },
+  "homepage": "https://github.com/Vennela-Vasireddy/Master_React#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
