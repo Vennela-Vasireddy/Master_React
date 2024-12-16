@@ -26,7 +26,6 @@
     
     margin: 10px;
     width: 250px;
-    height: 470px;
     padding: 4px;
     background-color: lightblue;
     
@@ -47,4 +46,10 @@
 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.filter-btn
+{
+    margin: 10px;
+    cursor: pointer;
 }
