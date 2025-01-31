@@ -48,11 +48,6 @@
     flex-wrap: wrap;
 }
 
-.filter-btn
-{
-    margin: 10px;
-    cursor: pointer;
-}
 
 .shimmer-container{
     display: flex;
@@ -66,5 +61,18 @@
     height: 300px;
     margin: 10px;
     background-color: #f0f0f0;
+
+}
+
+.logButton{
+    padding: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
 
 }
