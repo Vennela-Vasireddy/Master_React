@@ -15,7 +15,7 @@ const Body = () => {
     useEffect(() => {fetchData()}, [])
 
     const fetchData = async() => {
-        const data = await fetch("https://corsproxy.io/?url=https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.30971167047457&lng=82.99302231520416&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.30971167047457&lng=82.99302231520416&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     // This fetch returns a promise, so we need to handle it, so inorder to that we will use async - await
 
     const jsonData = await data.json();
