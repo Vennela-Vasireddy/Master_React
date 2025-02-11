@@ -6,14 +6,15 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs"; 
+import Menu from "./components/RestaurantMenu";
 import Error from "./components/Error";
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom"
 
 
 const AppLayout = () => (
     <div>
     <Header/>
-    <Body/>
+    <Outlet />
     <Footer/>
     </div>
 );
@@ -22,15 +23,25 @@ const appRouter = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout/>,
-        errorElement: <Error/>
-    },
-    {
-        path: "/about",
-        element: <AboutUs /> 
-    },
-    {
-        path: "/contact",
-        element: <ContactUs /> 
+        errorElement: <Error/>,
+        children: [
+            {
+                path: "/",
+                element: <Body /> 
+            },
+            {
+                path: "/about",
+                element: <AboutUs /> 
+            },
+            {
+                path: "/contact",
+                element: <ContactUs /> 
+            },
+            {
+                path: "/menu/:resID",
+                element: <Menu /> 
+            }
+        ]
     }
 ])
 
