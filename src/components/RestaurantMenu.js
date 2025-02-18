@@ -5,8 +5,7 @@ import Shimmer from "./Shimmer"
 const Menu = () =>
 {
 
-const resID = useParams()
-console.log(resID)
+const {resID} = useParams()
 
   const [Menu, setMenu] = useState([])
 
