@@ -2,7 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-
+import useOnlineStatus from "../utils/useOnlineStatus"
 
 const Body = () => {
 
@@ -10,7 +10,7 @@ const Body = () => {
     //Using setRestaurantList, we will update the RestaurantList and maintain through out the component
     const [filterResList, setfilterResList] = useState([]);
     const [SearchValue, setSearchValue] = useState("");
-
+    const OnlineStatus = useOnlineStatus()
 
     useEffect(() => {fetchData()}, [])
 
@@ -25,11 +25,18 @@ const Body = () => {
     // setRestaurantList(jsonData.data.cards[3].card.card.gridElements.infoWithStyle.restaurants) 
     // Above line is not a good practice, we should always use optional chaining to avoid errors, so
 
-    setRestaurantList(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    setfilterResList(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setRestaurantList(jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setfilterResList(jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 
 
     
+    }
+
+    
+
+    if(OnlineStatus === false){
+    
+        return <h2> No Internet, Please check the connection </h2>
     }
 
     return RestaurantList.length === 0? <Shimmer/> :  (<div className="Body">
