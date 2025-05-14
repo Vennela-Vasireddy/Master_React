@@ -10,6 +10,7 @@ import Menu from "./components/RestaurantMenu";
 import Error from "./components/Error";
 import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom"
 
+// const Grocery = lazy(()=>{ import("./components/Grocery") }) This is how you to lazyloading
 
 const AppLayout = () => (
     <div>
@@ -29,6 +30,7 @@ const appRouter = createBrowserRouter([
                 path: "/",
                 element: <Body /> 
             },
+            
             {
                 path: "/about",
                 element: <AboutUs /> 
