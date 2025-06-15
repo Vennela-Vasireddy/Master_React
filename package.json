@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "watch-test": "jest --watch",
     "dev": "webpack serve --mode development",
     "lint": "eslint . --fix",
     "format": "prettier --write ."
@@ -26,13 +27,23 @@
   },
   "homepage": "https://github.com/Vennela-Vasireddy/Master_React#readme",
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^30.0.0",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
     "parcel": "^2.13.0",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/postcss": "^4.0.17",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^6.29.0",
     "tailwindcss": "^4.0.17"
   }

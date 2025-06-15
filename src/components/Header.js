@@ -2,11 +2,14 @@ import { LOGO_URL } from "../utils/constants";
 import {useState} from 'react';
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus"
+import { useSelector } from "react-redux";
 
 const Header = () => {
 
     const [LogButton, setLogButton] = useState("Log_In");
     const Status = useOnlineStatus()
+
+    const cartItems = useSelector((store) => store.cart.items)
     return (
 
     <div className="header flex justify-between shadow-lg m-2">
@@ -29,7 +32,9 @@ const Header = () => {
                 <li className="px-4">
                    <Link to="/contact"> Contact Us </Link> 
                     </li>
-                <li className="px-4">Cart</li>
+                <li className="px-4">
+                    <Link to="/Cart"> Cart - ({cartItems.length} items) </Link> 
+                    </li>
                 <button className="logButton" onClick={() => { LogButton == "Log_In"? setLogButton("Log_Out"): setLogButton("Log_In") }} > {LogButton}</button>
             </ul>
         </div>

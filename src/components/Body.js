@@ -25,8 +25,8 @@ const RestaurantCardPromoted = withPromotedLabel(RestaurantCard)
     // setRestaurantList(jsonData.data.cards[3].card.card.gridElements.infoWithStyle.restaurants) 
     // Above line is not a good practice, we should always use optional chaining to avoid errors, so
 
-    setRestaurantList(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    setfilterResList(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setRestaurantList(jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setfilterResList(jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 
 
     

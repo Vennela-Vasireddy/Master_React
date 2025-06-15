@@ -9,15 +9,21 @@ import ContactUs from "./components/ContactUs";
 import Menu from "./components/RestaurantMenu";
 import Error from "./components/Error";
 import { createBrowserRouter, Outlet, RouterProvider, Outlet } from "react-router-dom"
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 // const Grocery = lazy(()=>{ import("./components/Grocery") }) This is how you to lazyloading
 
 const AppLayout = () => (
+    <Provider store={appStore}> 
     <div>
     <Header/>
     <Outlet />
     <Footer/>
     </div>
+        </Provider>
+
 );
 
 const appRouter = createBrowserRouter([
@@ -42,6 +48,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/menu/:resID",
                 element: <Menu /> 
+            },
+            {
+                path: "/cart",
+                element: <Cart /> 
             }
         ]
     }

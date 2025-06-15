@@ -1,0 +1,60 @@
+ {
+        "id": "981142",
+        "name": "Pizza Factory",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/26/0b2a9dde-39b9-4ca8-89e4-e8b54b8ed97d_981142.jpg",
+        "locality": "Nadesar",
+        "areaName": "Nadesar",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+            "Italian"
+        ],
+        "veg": true,
+        "parentId": "2878",
+        "avgRatingString": "--",
+        "sla": {
+            "deliveryTime": 51,
+            "lastMileTravel": 6.1,
+            "serviceability": "SERVICEABLE",
+            "slaString": "50-55 mins",
+            "lastMileTravelString": "6.1 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-06-14 23:59:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    }

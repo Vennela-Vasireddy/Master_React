@@ -7,6 +7,7 @@ const Menu = () =>
 {
 
 const {resID} = useParams()
+const [showIndex, setShowIndex] = useState(0)
 
   const [Menu, setMenu] = useState([])
 
@@ -42,7 +43,13 @@ const {resID} = useParams()
       <h3 className="font-bold text-lg">{cuisines.join(", ")} - {costForTwo}</h3>
 
       {
-        categories.map((category) => (<RestaurantCategory key={category?.card?.card.title} data={category?.card?.card} />))
+        categories.map((category, index) => (<RestaurantCategory
+           key={category?.card?.card.title}
+            data={category?.card?.card} 
+            showItem = {index == showIndex? true:false}
+            setShowIndex={() => setShowIndex(index)}
+            
+            />))
       }
 
 
